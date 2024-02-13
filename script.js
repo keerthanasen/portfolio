@@ -1,23 +1,23 @@
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Query all links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//         anchor.addEventListener('click', function (e) {
+//             e.preventDefault();
 
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
+//             const targetId = this.getAttribute('href');
+//             const targetElement = document.querySelector(targetId);
 
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-});
+//             if (targetElement) {
+//                 targetElement.scrollIntoView({
+//                     behavior: 'smooth',
+//                     block: 'start'
+//                 });
+//             }
+//         });
+//     });
+// });
 
+//for slides in project.html
 document.addEventListener('DOMContentLoaded', function() {
     let slideIndex = 0;
     showSlides(slideIndex);
